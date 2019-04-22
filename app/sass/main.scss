@@ -1,0 +1,412 @@
+$colorMain: #222222;
+$color2: #4A4556;
+$orange: #f27830;
+$border: #EDEDED;
+$bg: #F7F5FA;
+
+@font-face {
+	font-family: DINPro;
+	src: url("../fonts/DINPro/DINPro.ttf");
+}
+
+@font-face {
+	font-family: DINProBold;
+	src: url("../fonts/DINPro/DINPro-Bold.ttf");
+}
+
+body {
+	font: 16px DINPro;
+	color: $colorMain;
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	opacity: 0;
+}
+
+.top-header {
+	text-align: center;
+	padding: 165px 0;
+
+	h1 {
+		font-size: 48px;
+		line-height: 54px;
+		color: $colorMain;
+		margin-bottom: 24px;
+	}
+
+	p {
+		font-size: 16px;
+		font-family: Roboto;
+		line-height: 26px;
+		color: $color2;
+		letter-spacing: .3px;
+		margin-bottom: 48px;
+
+		br {
+			display: none;
+		}
+
+		b {
+			color: $orange;
+		}
+	}
+}
+
+.main-bt {
+	text-decoration: none;
+	font-family: Roboto;
+	font-weight: 600;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: .002px;
+	color: $colorMain;
+	position: relative;
+	padding: 18px 45px;
+
+	&:before {
+		background: #f9f9f9;
+		border-radius: 30px;
+	}
+
+	&:after, &:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		width: 54px;
+		height: 54px;
+		top: 50%;
+		margin-top: -27px;
+		left: 0;
+		transition: all .3s;
+	}
+
+	&:after {
+		background: url("../images/plus.svg") center center no-repeat;
+		background-size: 14px;
+	}
+
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+
+		&:after {
+			transform: rotate(180deg);
+		}
+	}
+
+	span {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.wrapper-motivation {
+	background: $bg;
+	position: relative;
+	padding-top: 501px;
+	padding-bottom: 80px;
+
+	&:before {
+		content: '';
+		width: 100%;
+		height: 600px;
+		position: absolute;
+		background: url("../images/Rectangle.png") center center no-repeat;
+		background-size: cover;
+		top: 0;
+		left: 0;
+	}
+	
+	.mot-container {
+		width: 972px;
+		margin: 0 auto;
+		position: relative;
+		
+		z-index: 2;
+		@extend .clear;
+
+		.item-m {
+			float: left;
+			width: 50%;
+			height: 232px;
+			padding-top: 50px;
+			padding-left: 60px;
+			padding-right: 89px;
+			background: #fff;
+			opacity: 0;
+			transform: scale(.8);
+			border: 1px solid $border;
+
+			&:nth-child(1), &:nth-child(2) {
+				border-bottom: none;
+			}
+
+			&:nth-child(1), &:nth-child(3) {
+				border-right: none
+			}
+
+			h4 {
+				color: $orange;
+				font-size: 12px;
+				text-transform: uppercase;
+				line-height: 19px;
+				font-family: "DINProBold";
+				letter-spacing: .008px;
+				margin-bottom: 12px;
+			}
+
+			p {
+				font-size: 24px;
+				letter-spacing: -.008px;
+			}
+		}
+
+		@keyframes item-m {
+			100% {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+
+		&.animate-view {
+			.item-m {
+				animation-name: item-m;
+				animation-timing-function: linear;
+				animation-fill-mode: forwards;
+				animation-duration: .3s;
+
+				&:nth-child(2) {
+					animation-delay: .2s;
+				}
+
+				&:nth-child(3) {
+					animation-delay: .3s;
+				}
+
+				&:nth-child(4) {
+					animation-delay: .1s;
+				}
+			}
+		}
+	}
+}
+
+.wrapper-we {
+	width: 773px;
+	margin: 0 auto;
+	padding: 80px 0 100px 0;
+
+	h2 {
+		font-size: 48px;
+		letter-spacing: -.002px;
+		margin-bottom: 24px;
+	}
+
+	p {
+		color: #4E4D53;
+		font-family: Roboto;
+		margin-bottom: 24px;
+		line-height: 26px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.wrapper-advantages {
+	background: $bg;
+	padding: 120px 0 160px 0;
+
+	h3 {
+		text-align: center;
+		letter-spacing: -.02em;
+		font-size: 40px;
+		margin-bottom: 60px;
+	}
+}
+
+.advantages-container {
+	width: 1139px;
+	margin: 0 auto;
+	@extend .clear;
+
+	.item-adv {
+		float: left;
+		width: 33.333%;
+		padding-right: 58px;
+
+		&:before {
+			content: '';
+			width: 51px;
+			height: 52px;
+			background: url("../images/Vector.svg") center center no-repeat;
+			background-size: 100%;
+			display: block;
+			margin-bottom: 30px;
+		}
+
+		h4 {
+			font-size: 20px;
+			margin-bottom: 50px;
+			color: #000;
+			position: relative;
+			
+			&:after {
+				content: '';
+				width: 24px;
+				height: 2px;
+				background: $orange;
+				display: inline-block;
+				position: absolute;
+				bottom: -24px;
+				left: 0;
+			}
+		}
+
+		p {
+			font-family: Roboto;
+			font-style: normal;
+			color: #4E4D53;
+			font-weight: normal;
+			line-height: 26px;
+		}
+	}
+}
+
+.wrapper-yourself {
+	background: #161616;
+	padding: 100px 0 120px 0;
+	color: #fff;
+
+	h3 {
+		line-height: 52px;
+		font-size: 40px;
+		text-align: center;
+		margin-bottom: 82px;
+	}
+
+	.yourself-container {
+		width: 575px;
+		margin: 0 auto;
+	}
+
+	.wp-input {
+		margin-bottom: 70px;
+		position: relative;
+
+		&:after {
+			content: attr(data-count);
+			width: 64px;
+			height: 64px;
+			border: 1px solid #4a4a4a;
+			font-size: 20px;	
+			color: $orange;
+			text-align: center;
+			line-height: 64px;
+			display: block;
+			position: absolute;
+			top: -22px;
+			left: -92px;
+			border-radius: 50%;
+			transition: all .3s;
+		}
+
+		label {
+			line-height: 25px;
+			margin-bottom: 20px;
+			display: inline-block;
+		}
+
+		input, textarea {
+			width: 100%;
+			border: none;
+			border-bottom: 2px solid #2b2b2d;
+			background: transparent;
+			color: #989898;
+			outline: none;
+			font-size: 24px;
+			line-height: 35px;
+			font-family: Roboto;
+			padding-bottom: 10px;
+			&::placeholder {
+				color: #5b5b5b;
+			}
+			&.error {
+				border-color: red;
+			}
+		}
+
+		textarea {
+			resize: none;
+		}
+
+		&.active {
+			&:after {
+				color: #fff;
+				border-color: $orange;
+				background: $orange;
+			}
+		}
+	}
+
+	button {
+		height: 54px;
+		background: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: $orange;
+		letter-spacing: 0.04em;
+		text-align: center;
+		width: 100%;
+		font-family: Roboto;
+		font-weight: bold;
+		border-radius: 30px;
+		cursor: pointer;
+		border: none;
+		transition: all .1s;
+
+		&:hover {
+			background: $orange;
+			color: #fff;
+		}
+
+		&:focus, &:active {
+			outline: none;
+		}
+	}
+}
+
+@import "media";
+
+
+
+
+
+
+
+
+
+
+

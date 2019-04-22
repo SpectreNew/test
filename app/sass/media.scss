@@ -1,0 +1,207 @@
+@media (max-width: 1200px) {
+	.advantages-container {
+		.item-adv {
+			padding-left: 0;
+			padding: 0 30px;
+		}
+	}
+
+	.wrapper-advantages {
+		padding: 80px 0 100px 0;
+	}
+
+	.wrapper-yourself {
+		padding-top: 80px;
+		padding-bottom: 90px;
+	}
+}
+
+@media (max-width: 1190px) {
+	.wrapper-advantages {
+		padding: 60px 0 60px 0;
+
+		h3 {
+			font-size: 35px;
+		}
+	}
+
+	.advantages-container {
+		width: 500px;
+
+		.item-adv {
+			width: 100%;
+			margin-bottom: 60px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:before {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.top-header {
+		padding-top: 90px;
+		padding-bottom: 90px;
+
+		h1 {
+			font-size: 33px;
+		}
+
+		p {
+			br {
+				display: block;
+			}
+		}
+	}
+
+	.main-bt {
+		font-size: 14px;
+	}
+
+	.wrapper-motivation {
+		padding: 15px;
+
+		&:before {
+			height: 50%;
+		}
+
+		.mot-container {
+			width: 100%;
+		}
+	}
+	.wrapper-motivation .mot-container .item-m {
+		width: 100%;
+		padding: 30px;
+		height: auto;
+
+		p {
+			font-size: 20px;
+		}
+	}
+
+	.wrapper-we h2 {
+		font-size: 38px;
+	}
+}
+
+@media (max-width: 830px) {
+	.wrapper-advantages h3 {
+		font-size: 28px;
+	}
+
+	.wrapper-we {
+		width: 100%;
+		padding: 30px 15px;
+
+		h2 {
+			margin-bottom: 20px;
+			font-size: 28px;
+		}
+	}
+
+	.wrapper-yourself {
+		h3 {
+			font-size: 36px;
+		}
+	}
+	.wrapper-yourself .yourself-container {
+		width: 480px;
+	}
+}
+
+@media (max-width: 720px) {
+	.wrapper-yourself {
+		padding: 60px 15px;
+
+		.wp-input {
+			padding-left: 70px;
+
+			input, textarea {
+				font-size: 18px;
+			}
+
+			&:after {
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 15px;
+				top: -18px;
+				left: 0;
+			}
+		}
+	}
+
+	.wrapper-yourself .yourself-container {
+		width: 100%;
+	}
+	
+	.top-header {
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		h1 {
+			line-height: 30px;
+		}
+	}
+}
+
+@media (max-width: 530px) {
+	.wrapper-yourself {
+		padding-bottom: 50px;
+		padding-top: 30px;
+
+		h3 {
+			font-size: 23px;
+			margin-bottom: 50px;
+		}	
+	}
+
+	.wrapper-advantages {
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		h3 {
+			margin-bottom: 25px;
+			font-size: 26px;
+		}
+	}
+
+
+	.wrapper-yourself {
+		button {
+			height: 45px;
+		}
+
+		.wp-input {
+			margin-bottom: 35px;
+
+			input {
+				line-height: 20px;
+			}
+		}
+	}
+
+	.advantages-container {
+		width: 100%;
+
+		.item-adv {
+			margin-bottom: 30px;
+
+			&:before {
+				width: 40px;
+				height: 40px;
+			}
+
+			h4 {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+

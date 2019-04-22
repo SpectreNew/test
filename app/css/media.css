@@ -1,0 +1,162 @@
+@media (max-width: 1200px) {
+  .advantages-container .item-adv {
+    padding-left: 0;
+    padding: 0 30px;
+  }
+  .wrapper-advantages {
+    padding: 80px 0 100px 0;
+  }
+  .wrapper-yourself {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .wrapper-advantages {
+    padding: 60px 0 60px 0;
+  }
+  .wrapper-advantages h3 {
+    font-size: 35px;
+  }
+  .advantages-container {
+    width: 500px;
+  }
+  .advantages-container .item-adv {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .advantages-container .item-adv:last-child {
+    margin-bottom: 0;
+  }
+  .advantages-container .item-adv:before {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .top-header {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .top-header h1 {
+    font-size: 33px;
+  }
+  .top-header p br {
+    display: block;
+  }
+  .main-bt {
+    font-size: 14px;
+  }
+  .wrapper-motivation {
+    padding: 15px;
+  }
+  .wrapper-motivation:before {
+    height: 50%;
+  }
+  .wrapper-motivation .mot-container {
+    width: 100%;
+  }
+  .wrapper-motivation .mot-container .item-m {
+    width: 100%;
+    padding: 30px;
+    height: auto;
+  }
+  .wrapper-motivation .mot-container .item-m p {
+    font-size: 20px;
+  }
+  .wrapper-we h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 830px) {
+  .wrapper-advantages h3 {
+    font-size: 28px;
+  }
+  .wrapper-we {
+    width: 100%;
+    padding: 30px 15px;
+  }
+  .wrapper-we h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .wrapper-yourself h3 {
+    font-size: 36px;
+  }
+  .wrapper-yourself .yourself-container {
+    width: 480px;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrapper-yourself {
+    padding: 60px 15px;
+  }
+  .wrapper-yourself .wp-input {
+    padding-left: 70px;
+  }
+  .wrapper-yourself .wp-input input, .wrapper-yourself .wp-input textarea {
+    font-size: 18px;
+  }
+  .wrapper-yourself .wp-input:after {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    top: -18px;
+    left: 0;
+  }
+  .wrapper-yourself .yourself-container {
+    width: 100%;
+  }
+  .top-header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .top-header h1 {
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .wrapper-yourself {
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+  .wrapper-yourself h3 {
+    font-size: 23px;
+    margin-bottom: 50px;
+  }
+  .wrapper-advantages {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .wrapper-advantages h3 {
+    margin-bottom: 25px;
+    font-size: 26px;
+  }
+  .wrapper-yourself button {
+    height: 45px;
+  }
+  .wrapper-yourself .wp-input {
+    margin-bottom: 35px;
+  }
+  .wrapper-yourself .wp-input input {
+    line-height: 20px;
+  }
+  .advantages-container {
+    width: 100%;
+  }
+  .advantages-container .item-adv {
+    margin-bottom: 30px;
+  }
+  .advantages-container .item-adv:before {
+    width: 40px;
+    height: 40px;
+  }
+  .advantages-container .item-adv h4 {
+    font-size: 18px;
+  }
+}
